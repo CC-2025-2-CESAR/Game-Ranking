@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import datetime
 from django.utils import timezone
 from django.db import models
@@ -31,3 +32,8 @@ class Resposta(models.Model):
     
     def foi_publicado_recentemente(self):
         return self.data_criacao >= timezone.now() - datetime.timedelta(days=1)
+=======
+from django.db import models
+
+# Create your models here.
+>>>>>>> a6982c5e9c20b9c87db199dba68013ef835342f4
