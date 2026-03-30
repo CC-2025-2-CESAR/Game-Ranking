@@ -132,3 +132,8 @@ LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+import os
+
+if os.environ.get("RENDER"):
+    import populate_games
