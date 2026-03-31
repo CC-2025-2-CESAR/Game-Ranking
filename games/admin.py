@@ -12,3 +12,13 @@ class GameAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     list_filter   = ('genres',)
     filter_horizontal = ('genres',)
+    fields = (
+        'title',
+        'description',
+        'release_year',
+        'cover',
+        'cover_url',
+        'trailer_url',
+        'official_url',
+        'genres',
+    )
