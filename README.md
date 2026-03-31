@@ -78,7 +78,7 @@ Tambem foram preenchidos no painel do Render:
 - Screencast: https://www.youtube.com/watch?v=V_xk95SDth4
 
 ## Entrega 2
-
+- Site deploy: https://game-ranking.onrender.com/ 
 - Prints do Jira: https://drive.google.com/drive/folders/187pxLEDKzr8ZbCQJDWKPiKosjQO6r-wn?usp=sharing
-- Screencast: https://youtu.be/GMoFRywxXDE
+- Screencast: https://youtu.be/iYjTGXvBgdk
 - Relatorio de pair programming: https://docs.google.com/document/d/1ghc7w0ws937uktHESDruGyv4_7DGh1inWLtMlZLwBgc/edit?usp=sharing
