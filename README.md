@@ -159,7 +159,7 @@ Durante a prática de pair programming, as duplas alternaram os papéis de drive
 
 
 - screencast (histórias): [youtube.com/watch?v=8Kbwe1w_Krs&feature=youtu.be](https://youtu.be/BfQr5rz33Ek)
-- screencast (Testes): https://youtu.be/XJjphy9XEus
+- screencast (Testes): https://youtu.be/XJjphy9XEuso
 - Bugtracker:<img width="1920" height="998" alt="bugtrackerprint1" src="https://github.com/user-attachments/assets/48df8e3b-2061-4aeb-bf5b-66bca9a5a7e4" />
 
 - Relatório de pair programming:
