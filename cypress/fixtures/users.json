@@ -1,0 +1,9 @@
+{
+  "valid": {
+    "password": "CypressTest123!"
+  },
+  "invalid": {
+    "username": "usuario_inexistente_xyz",
+    "password": "senha-errada-123"
+  }
+}
