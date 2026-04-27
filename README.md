@@ -51,6 +51,37 @@ python manage.py runserver
 http://127.0.0.1:8000/
 ```
 
+## Testes E2E (Cypress)
+
+Os testes ponta a ponta usam [Cypress](https://www.cypress.io/) e ficam em `cypress/e2e/`.
+
+1. Em um terminal, suba o servidor Django:
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+2. Em outro terminal, instale as dependências de teste (apenas na primeira vez):
+
+```bash
+npm install
+```
+
+3. Rode os testes em modo interativo (abre a UI do Cypress):
+
+```bash
+npm run cypress:open
+```
+
+Ou em modo headless (gera vídeo em `cypress/videos/`):
+
+```bash
+npm run cypress:run
+```
+
+Os testes assumem que o servidor está em `http://127.0.0.1:8000` e que o banco tem ao menos um jogo cadastrado (o `db.sqlite3` do repositório já atende).
+
 ## Como foi colocado no Render
 
 O projeto foi publicado no Render usando a criação manual do serviço web.
@@ -111,5 +142,3 @@ Durante a prática de pair programming, as duplas alternaram os papéis de drive
 -Bugtracker:
 - Relatório de pair programming:
 Após um período de continuidade na prática de pair programming, foi possível observar uma evolução significativa na dinâmica das duplas, com maior sincronização entre driver e navigator e redução das divergências iniciais. A comunicação tornou-se mais objetiva e eficiente, permitindo decisões mais rápidas e um fluxo de trabalho mais natural. Além disso, houve aumento na confiança entre os participantes, refletindo em maior autonomia e produtividade. Os erros continuaram sendo minimizados e a qualidade do código manteve-se elevada, evidenciando que a prática constante contribui não apenas para o aprimoramento técnico, mas também para o fortalecimento do trabalho em equipe e adaptação a diferentes estilos de pensamento.
-
-   

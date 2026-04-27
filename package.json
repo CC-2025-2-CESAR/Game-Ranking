@@ -1,0 +1,12 @@
+{
+  "name": "game-ranking-e2e",
+  "private": true,
+  "description": "Testes E2E (Cypress) do projeto Game Ranking",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.15.0"
+  }
+}
