@@ -60,22 +60,6 @@ jobs:
         CSRF_TRUSTED_ORIGINS: "https://game-ranking-app-ehfhd4gnhvgtatfq.brazilsouth-01.azurewebsites.net"
       run: |
         python manage.py collectstatic --noinput
-
-    - name: Configure Azure App Settings
-      uses: azure/appservice-settings@v1
-      with:
-        app-name: game-ranking-app
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        app-settings-json: |
-          [
-            { "name": "DATABASE_URL", "value": "${{ secrets.DATABASE_URL }}", "slotSetting": false },
-            { "name": "SECRET_KEY", "value": "${{ secrets.SECRET_KEY }}", "slotSetting": false },
-            { "name": "ALLOWED_HOSTS", "value": "game-ranking-app-ehfhd4gnhvgtatfq.brazilsouth-01.azurewebsites.net", "slotSetting": false },
-            { "name": "CSRF_TRUSTED_ORIGINS", "value": "https://game-ranking-app-ehfhd4gnhvgtatfq.brazilsouth-01.azurewebsites.net", "slotSetting": false },
-            { "name": "DEBUG", "value": "False", "slotSetting": false },
-            { "name": "SCM_DO_BUILD_DURING_DEPLOYMENT", "value": "true", "slotSetting": false }
-          ]
-
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
